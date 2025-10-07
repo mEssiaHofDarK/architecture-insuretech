@@ -1,7 +1,7 @@
 type Query {
     client(id: ID!): User!
-    documents(id: ID!): [Document!]
-    relatives(id: ID!): [Relative!]
+    documents(id: ID!): [Document!]!
+    relatives(id: ID!): [Relative!]!
 }
 
 type User {
